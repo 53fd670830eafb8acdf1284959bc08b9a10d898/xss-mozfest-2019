@@ -1,0 +1,148 @@
+/* Mozfest Theme */
+
+:root {
+    /* Colours */
+    /* Firefox */
+    --colour-firefox-blue: #18c0b8;
+    --colour-firefox-orange: #ff9922;
+    --colour-firefox-blue-transparent: #18c0b833;
+    --colour-firefox-orange-transparent: #ff992233;
+    /* Space */
+    --colour-space-black: #000000;
+    --colour-deep-space: #0c007762;
+    --colour-dim-star: #ffa600ab;
+    --colour-astral-white: #ffffffaa;
+    /* App Theme */
+    /* Font */
+    font-family: 'Courier New', Courier, monospace;
+    /* Colours */
+    border-color: var(--colour-astral-white);
+    color: var(--colour-astral-white);
+    text-shadow: 0 0 2px var(--colour-firefox-blue);
+}
+
+* {
+    /* Spacing */
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    /* Spacing ( haha :) ) */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* Colours */
+    background-color: #060414;
+    background-image: url(./space.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    /* Background */
+    background: url(./firefox-logo.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 80vmin;
+}
+
+.background-mask {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, var(--colour-firefox-orange-transparent), var(--colour-firefox-blue-transparent));
+}
+
+.content {
+    /* Spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #00000055;
+    overflow-y: scroll;
+}
+
+.header {
+    /* Spacing */
+    padding: calc(10px + 2vmin);
+    min-height: 2vh;
+    /* Center the Text */
+    text-align: center;
+    font-size: calc(2px + 2vmin);
+    /* Colours */
+    background: linear-gradient(to right, var(--colour-firefox-orange-transparent), var(--colour-firefox-blue-transparent));
+}
+
+.container {
+    /* Spacing */
+    padding: calc(10px + 2vmin);
+    min-height: 2vh;
+    /* Center the Text */
+    text-align: center;
+    font-size: calc(2px + 2vmin);
+    background-color: #00000022;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.space {
+    /* Spacing */
+    height: 5vh;
+}
+
+input,
+text,
+button {
+    /* Colours */
+    background-color: #00000088;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colour-astral-white);
+    color: var(--colour-astral-white);
+    text-shadow: 0 0 2px var(--colour-firefox-blue);
+    font-size: calc(1px + 1vmin);
+    padding: .5vmin;
+}
+
+.code {
+    /* Spacing */
+    min-width: 80vw;
+    max-width: 100vw;
+    margin: 2vh;
+    padding: 1vh 0px;
+    text-align: center;
+    font-size: calc(2px + 2vmin);
+}
+
+.xss-code {
+    padding: 1vh 0px;
+}
+
+.code-button {
+    /* Spacing */
+    min-height: calc(2px + 5vh);
+    padding: .5vh;
+    margin: 2vh;
+    font-size: calc(2px + 1.5vmin);
+    max-width: 20vw;
+}
+
+.submit-button {
+    /* Spacing */
+    margin: 2vh;
+    padding: .7vh 2.5vw;
+    font-size: calc(2px + 2vmin);
+}
