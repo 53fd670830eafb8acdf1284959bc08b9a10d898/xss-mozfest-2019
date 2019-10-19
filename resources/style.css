@@ -43,7 +43,7 @@ html {
 
 body {
     /* Background */
-    background: url(./firefox-logo.svg);
+    background: url(./firefox-logo-transparent.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
