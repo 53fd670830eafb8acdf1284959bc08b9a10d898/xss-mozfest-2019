@@ -51,7 +51,7 @@
                         &lt;button onclick="alert('XSS!')"&gt;Just a friendly button&lt;/button&gt;
                     </button>
                     <button class="code-button" , onclick="copy_code(this)">
-                        &lt;script&gt;var x='XSS :)';while(prompt(x)!=x);&lt;/script&gt;
+                        &lt;script&gt;var x='XSS :)';while(prompt('Type the text between the brackets to escape -> [' + x + ']')!=x);&lt;/script&gt;
                     </button>
                     <button class="code-button" , onclick="copy_code(this)">
                         &lt;img src='https://ichef.bbci.co.uk/news/912/cpsprodpb/7D66/production/_105120123_gettyimages-831502910.jpg' height='35px' align='center'/&gt;
